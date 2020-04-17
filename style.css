@@ -8,9 +8,15 @@ html {
   font-family: 'Quicksand', sans-serif;
 }
 
+.clock {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 30px;
+}
+
 .title {
     text-align: center;
-    font-size: 38px;
+    font-size: 33px;
     color: rgb(255, 255, 255);
 }
 
@@ -37,7 +43,7 @@ input {
     background: none;
     appearance: none;
     border: 0;
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Nanum Gothic Coding', monospace;
     color: white;
     border-bottom: 2px solid white;
