@@ -1,95 +1,90 @@
-body,
 html {
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-  margin: 0;
+  font-size: 1.5rem;
+}
+
+body, html {
   padding: 0;
-  font-family: 'Quicksand', sans-serif;
-}
-
-.clock {
-  text-align: center;
-  font-size: 50px;
-  margin-top: 30px;
-}
-
-.title {
-    text-align: center;
-    font-size: 25px;
-    color: rgb(255, 255, 255);
-}
-
-html {
-    background: #797880;
+  margin: 0;
 }
 
 body {
-    color: white;
-    align-items: center;
-    justify-content: center;
+  background-image: url("image/bg.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.toDoForm {
-    padding: 0;
-    margin: 0 auto;
-    width: 800px;
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+.clock, .title{
+  display: flex;
+  padding: .8rem;
+  margin: 0 auto;
+  width: 8rem;
+  height: 3rem;
+  font-size: 2rem;
+  text-align: center;
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.title {
+  font-size: 1rem;
+  width: 10rem;
 }
 
 input {
-    padding: 0;
-    margin: 0 auto;
-    width: 800px;
-    background: none;
-    appearance: none;
-    font-size: 30px;
-    font-family: 'Nanum Gothic Coding', monospace;
-    color: white;
-    border: 0;
-    border-bottom: 2px solid white;
-  }
-
-input::placeholder {
-    color: white;
-  }
-
-input:focus,
-input:active {
-  outline: none;
+  width: 10rem;
+  height: 1.8rem;
+  border: 0;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 1px solid white;
+  background: none;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 auto;
-    width: 800px;
-    font-size: 25px;
-    margin-top: 15px;
+input::placeholder {
+  font-size: .8rem;
+  text-align: center;
+}
+
+#nameInput {
+  border: 0;
+  border-bottom: 2px solid white;
+}
+
+#nameInput::placeholder {
+  color: white;
+  font-size: 1rem;
+}
+
+#toDoInput {
+  width: 20rem;
+  border: 0;
+  border-bottom: 2px solid white;
 }
 
 li {
-    border-left: 3px solid white;
-    padding-left: 8px;
-    color: white;
-    margin-top: 5px;
-}
-  
-button {
-      background-color: none;
+  list-style-type: none;
+  font-size: 1.2rem;
 }
 
 .delButton {
-    margin-right: 10px;
-    cursor: pointer;
-    border: none;
-    background: none;
-    width: 32px;
-    height: 32px;
-}
-
-.createTime {
-  font-size: 20px;
-  text-align: right;
-  padding: 5px;
-  border: 0;
+  background: none;
+  padding: 0;
+  margin: .3rem;
+  cursor: pointer;
 }

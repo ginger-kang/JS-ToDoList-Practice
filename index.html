@@ -7,22 +7,21 @@
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Quicksand&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="clock">
-            <h1>00:00</h1>
-        </div>
-
+        <div class="clock">00:00</div>
+        <form class="toDoName form">
+            <input type="text" id="nameInput" placeholder="what's your name"/>
+        </form>
+        <h4 class="js-greetings greetings"></h4>
         <div class="title">
-            <h1>TO DO LIST</h1>
+            <h1>To Do List</h1>
         </div>
-
-        <div class="list">
-            <form class="toDoForm">
-                <input type="text" placeholder=""/>
-            </form>
-            <ul class="toDoList"></ul>
-        </div>
+        <form class="toDoForm">
+            <input type="text" id="toDoInput" placeholder=""/>
+        </form>
+        <ul class="toDoList"></ul>
 
         <script src="clock.js"></script>
         <script src="index.js"></script>
+        <script src="greeting.js"></script>
     </body>
 </html>
